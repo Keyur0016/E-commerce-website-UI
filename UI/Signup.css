@@ -1,0 +1,256 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    font-family: 'Mukta', sans-serif;
+    font-size: 3vh;
+
+    --Signup_division_boxshadow_color: #ffb43b ; 
+    --Signup_division_bgColor: #f6f7fb; 
+    --Signup_button_color: #fec870; 
+    --Signin_button_hover_bgColor : #393d46; 
+
+    --Login_forget_password_textColor:rgb(73,73,73) ;
+    --Login_forget_password_text_hoverColor: black ; 
+    
+    --Input_widget_focus_color: #fec870; 
+}
+
+body{
+    background-color: white;
+    background-image: url(./Image/Background.jpeg);
+    background-size: 100vw 100vh;
+}
+
+/* Signup main division  */
+.Signup_div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Signup div  */
+.Signup{
+    height: fit-content;
+    width: 30%; 
+    margin: auto;
+    background-color: var(--Signup_division_bgColor) ;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    box-shadow: 0.10rem 0.20rem 0.20rem var(--Signup_division_boxshadow_color);
+    border-radius: 8px;
+}
+
+/* Website logo main div  */
+.Website_logo_main_div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1.10rem;
+    padding: 1rem;
+}
+
+/* Website logo div  */
+.Website_logo_div{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    float: left;
+    width: 60%;
+}
+
+/* Website logo  */
+.Website_logo{
+    margin: auto;
+    height: 1.5rem;
+    width: 100%;
+}
+
+/* Signup title  */
+#Signup_title{
+    font-size: 1.15rem;
+    font-family: var(--font-family);
+    float: left;
+    margin-top: 0.70rem;
+    margin-bottom: 1.2rem;
+    padding-left: 0.30rem;
+}
+
+/* Input taken field div  */
+
+.Input_option_division{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+/* Input field  */
+
+.Input_option{
+    border-radius: 0px;
+    font-size: 0.90rem;
+    font-family: 'Mukta', sans-serif;
+}
+
+.Input_option:focus{
+    box-shadow :0 1px 1px var(--Input_widget_focus_color) inset, 0 0 8px var(--Input_widget_focus_color); 
+    border: 1px solid var(--Input_widget_focus_color);
+}
+
+/* Check password checkbox division  */
+
+.Check_password_div{
+    border: 0px;
+    background-color: transparent;
+    padding: 0.15rem;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+}
+
+
+/* Checkbox focus effect  */
+.Checkbox_option:checked{
+    box-shadow :0 1px 1px var(--Input_widget_focus_color) inset, 0 0 8px var(--Input_widget_focus_color); 
+    border: 1px solid var(--Input_widget_focus_color);
+    background-color: var(--Input_widget_focus_color);
+}
+
+/* Check password text  */
+
+.Check_password_text{
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.90rem;
+    margin-left: 0.50rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+/* Signup button  */
+
+.Submit_button{
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    margin-top: 0.80rem;
+    margin-bottom: 1rem;
+    padding-top: 0.30rem;
+    padding-bottom: 0.30rem;
+    width: 100%;
+    border: 0px;
+    background-color: var(--Signup_button_color);
+}
+
+.Submit_button:hover{
+    background-color: var(--Signin_button_hover_bgColor);
+    color: white;
+}
+
+/* Login and forget password div  */
+
+.Login_forget_password{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 95%; 
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.90rem;
+    color: var(--Login_forget_password_textColor);
+}
+
+/* Login option  */
+
+.Login{
+    cursor: pointer;
+    margin-right: 0.60rem;
+}
+
+.Login:hover{
+    color: var(--Login_forget_password_text_hoverColor);
+}
+
+/* forget password  */
+
+.forget_password{
+    cursor: pointer;
+    margin-left: 0.60rem;
+}
+
+.forget_password:hover{
+    color: var(--Login_forget_password_text_hoverColor);
+}
+
+@media only screen and (max-width:500px){
+    :root{
+        font-size: 2.85vh;
+    }
+     
+    .Signup{
+        background-color: var(--Signup_division_bgColor);
+        width: 96%;
+        padding-left: 0.60rem;
+        padding-right: 0.60rem;
+        padding-top: 0.70rem;
+        padding-bottom: 1.4rem;
+    }
+
+    .Website_logo_title_div{
+        padding-top: 1rem;
+        padding-left: 0.60rem;
+    }
+
+    /* Website logo  */
+    .Website_logo_div{
+        width: 70%;
+    }
+
+    #Signup_title{
+        font-size: 1.15rem;
+    }
+
+    .Input_division{
+        width: 100%;
+    }
+
+    .Login_forget_password{
+        display: block;
+    }
+
+    .Login{
+        margin-right: 0px;
+        margin-top: 0.30rem;
+        margin-bottom: 0.30rem;
+    }
+
+    .forget_password{
+        margin-left: 0px;
+        margin-top: 0.50rem;
+        margin-bottom: 0.30rem;
+    }
+
+}
+
+@media only screen and (min-width:700px) and (max-width:1100px){
+    .Signup{
+        width: 90%;
+    }
+}

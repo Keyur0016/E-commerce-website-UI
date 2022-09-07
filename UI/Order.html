@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Mukta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Order.css">
+</head>
+<body>
+    <div id="Order_page">
+
+        <div id="Order_list">
+             
+            <!-- Order division  -->
+            <div class="Order_information_div">
+                 
+                <!-- Order Index  -->
+                <div class="Order_index" onclick="View_bill_details(0)">
+                    Order 1
+                </div>
+
+                <!-- Order details title  -->
+                <div class="Order_title">
+                    View Order details
+                </div>
+               
+                <!-- Order details division  -->
+                <div class="Order_details">
+                     
+                    <!-- Order date information  -->
+                    <div class="Order_details_title_data">
+                        <div class="Order_details_title">Order date:</div>
+                        <div class="Order_data">19-Aug-2022</div>
+                    </div>
+
+                    <!-- Order id infomation  -->
+                    <div class="Order_details_title_data">
+                        <div class="Order_details_title">Order#</div>
+                        <div class="Order_data">404-23712637-2323</div>
+                    </div>
+
+                    <!-- Order total information  -->
+                    <div class="Order_details_title_data">
+                        <div class="Order_details_title">Order date:</div>
+                        <div class="Order_data">₹380(1item)</div>
+                    </div>
+                    
+                    <div class="Download_bill_option">
+                        Download Invoice
+                    </div>
+                </div>
+                
+                <!-- Shipment details title  -->
+                <div class="Order_title">
+                    Shipment details
+                </div>
+
+                <!-- Shipment details  -->
+                <div class="Order_details">
+
+                    <div class="Delivery_Status">
+                        Delivered
+                    </div>
+                    
+                    <div class="Order_delivery_date">
+                        <div class="Delivery_date_title">Delivery date : </div>
+                        <div class="Delivery_date_data">10-Auguest-2022</div>
+                    </div>
+                 
+                    <!-- Order item 1  -->
+                    <div class="Order_item">
+
+                        <div class="Order_image_div">
+                            <img src="./Image/BookImage1.jpg" alt="" class="Order_image">
+                        </div>
+
+                        <div class="Order_information_price">
+
+                            <div class="Order_information">
+
+                                <div class="Book_title">
+                                    101 Desi stories
+                                </div>
+
+                                <div class="Auther_information">
+                                    By Keyur
+                                </div>
+
+                                <div class="Quantity_information">
+                                    <div class="Quantity_title">Qty:</div>
+                                    <div class="Quantity">12</div>
+                                </div>
+                            </div>
+                        
+                            <div class="Order_price">
+                                ₹500/-
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+
+                    <!-- Order item 2  -->
+                    <div class="Order_item">
+
+                        <div class="Order_image_div">
+                            <img src="./Image/BookImage3.jpg" alt="" class="Order_image">
+                        </div>
+
+                        <div class="Order_information_price">
+
+                            <div class="Order_information">
+
+                                <div class="Book_title">
+                                    101 Desi stories
+                                </div>
+
+                                <div class="Auther_information">
+                                    By Keyur
+                                </div>
+
+                                <div class="Quantity_information">
+                                    <div class="Quantity_title">Qty:</div>
+                                    <div class="Quantity">12</div>
+                                </div>
+                            </div>
+                        
+                            <div class="Order_price">
+                                ₹500/-
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+
+                </div>
+                 
+                <!-- Payment information title  -->
+                <div class="Order_title">
+                    Payment information
+                </div>
+
+                <!-- Payment and shipping address details  -->
+                <div class="Order_details">
+
+                    <!-- Payment method title  -->
+                    <div class="Payment_title">
+                        Payment method
+                    </div>
+
+                    <div class="Payment_data">
+                        BHIM UPI
+                    </div>
+
+                    <!-- Shipping address title  -->
+                    <div class="Payment_title">
+                        Shipping Address
+                    </div>
+
+                    <div class="Payment_data" style="border-bottom: 0px;">
+                        A-201, Shayam antillia, mota varachha near mahadev chowk, Surat - 394101
+                    </div>
+                </div>
+
+                <!-- Order summery title  -->
+                <div class="Order_title">
+                    Order summery
+                </div>
+
+                <!-- Order summery details  -->
+                <div class="Order_details">
+
+                    <div class="Order_details_title_data">
+                        <div class="Order_details_title">Items total:</div>
+                        <div class="Order_data">₹600/-</div>
+                    </div>
+                    
+                    <div class="Order_details_title_data">
+                        <div class="Order_details_title">Postage & Packing:</div>
+                        <div class="Order_data">₹60/-</div>
+                    </div>
+
+                    <div class="Order_details_title_data">
+                        <div class="Order_details_title">Total before Tax:</div>
+                        <div class="Order_data">₹600/-</div>
+                    </div>
+
+                    <div class="Order_summery">
+                        <div class="Order_summery_title">Order Total:</div>
+                        <div class="Order_summery_total">₹500/-</div>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="Order_information_div">
+                 
+                <!-- Order Index  -->
+                <div class="Order_index" onclick="View_bill_details(1)">
+                    Order 2
+                </div>
+
+                <!-- Order details title  -->
+                <div class="Order_title">
+                    View Order details
+                </div>
+               
+                <!-- Order details division  -->
+                <div class="Order_details">
+                     
+                    <!-- Order date information  -->
+                    <div class="Order_details_title_data">
+                        <div class="Order_details_title">Order date:</div>
+                        <div class="Order_data">19-Aug-2022</div>
+                    </div>
+
+                    <!-- Order id infomation  -->
+                    <div class="Order_details_title_data">
+                        <div class="Order_details_title">Order#</div>
+                        <div class="Order_data">404-23712637-2323</div>
+                    </div>
+
+                    <!-- Order total information  -->
+                    <div class="Order_details_title_data">
+                        <div class="Order_details_title">Order date:</div>
+                        <div class="Order_data">₹380(1item)</div>
+                    </div>
+                    
+                    <div class="Download_bill_option">
+                        Download Invoice
+                    </div>
+                </div>
+                
+                <!-- Shipment details title  -->
+                <div class="Order_title">
+                    Shipment details
+                </div>
+
+                <!-- Shipment details  -->
+                <div class="Order_details">
+
+                    <div class="Delivery_Status">
+                        Delivered
+                    </div>
+                    
+                    <div class="Order_delivery_date">
+                        <div class="Delivery_date_title">Delivery date : </div>
+                        <div class="Delivery_date_data">10-Auguest-2022</div>
+                    </div>
+                 
+                    <div class="Order_item">
+
+                        <div class="Order_image_div">
+                            <img src="./Image/BookImage1.jpg" alt="" class="Order_image">
+                        </div>
+
+                        <div class="Order_information_price">
+
+                            <div class="Order_information">
+
+                                <div class="Book_title">
+                                    101 Desi stories
+                                </div>
+
+                                <div class="Auther_information">
+                                    By Keyur
+                                </div>
+
+                                <div class="Quantity_information">
+                                    <div class="Quantity_title">Qty:</div>
+                                    <div class="Quantity">12</div>
+                                </div>
+                            </div>
+                        
+                            <div class="Order_price">
+                                ₹500/-
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div class="Order_title">
+                    Payment information
+                </div>
+
+                <div class="Order_details">
+                    <div class="Payment_title">
+                        Payment method
+                    </div>
+
+                    <div class="Payment_data">
+                        BHIM UPL
+                    </div>
+
+                    <div class="Payment_title">
+                        Shipping Address
+                    </div>
+
+                    <div class="Payment_data" style="border-bottom: 0px;">
+                        A-201, Shayam antillia, mota varachha near mahadev chowk, Surat - 394101
+                    </div>
+                </div>
+
+                <div class="Order_title">
+                    Order summery
+                </div>
+
+                <div class="Order_details">
+
+                    <div class="Order_details_title_data">
+                        <div class="Order_details_title">Items total:</div>
+                        <div class="Order_data">₹600/-</div>
+                    </div>
+                    
+                    <div class="Order_details_title_data">
+                        <div class="Order_details_title">Postage & Packing:</div>
+                        <div class="Order_data">₹60/-</div>
+                    </div>
+
+                    <div class="Order_details_title_data">
+                        <div class="Order_details_title">Total before Tax:</div>
+                        <div class="Order_data">₹600/-</div>
+                    </div>
+
+                    <div class="Order_summery">
+                        <div class="Order_summery_title">Order Total:</div>
+                        <div class="Order_summery_total">₹500/-</div>
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        function View_bill_details(x){
+
+            let Element = document.getElementsByClassName("Order_information_div")[x] ; 
+            let Element_index_div = document.getElementsByClassName("Order_index")[x] ; 
+
+            let Element_color = getComputedStyle(Element_index_div).backgroundColor ; 
+
+            if (Element_color !== "rgb(57, 61, 70)"){
+                Element.style.height = "auto" ; 
+                Element_index_div.style.backgroundColor = "#393d46"; 
+                Element_index_div.style.color = "white" ; 
+                console.log("first") ; 
+            }
+
+            else if (Element_color === "rgb(57, 61, 70)") {
+                Element.style.height = "14rem"; 
+                Element_index_div.style.backgroundColor = "#ffc15e"; 
+                Element_index_div.style.color = "black" ; 
+                console.log("second") ; 
+            }
+        }
+
+    </script>
+</body>
+</html>

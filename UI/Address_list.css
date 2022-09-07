@@ -1,0 +1,131 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    font-size: 3vh; 
+    --Address_list_bgColor: #eaeded; 
+    --Address_list_boxShadow: rgb(209, 209, 209); 
+    --Particular_div_boxshadow: rgb(239, 239, 239) ; 
+    --Address_div_borderColor: rgb(232, 232, 232); 
+    --Address_index_div_bgColor: rgb(255,193,94); 
+    --OtherData_textColor: rgb(71, 71, 71); 
+    --Add_address_option: #393d46; 
+}
+
+body{
+    background-color: var(--Address_list_bgColor);
+}
+
+#Address_list{
+    width: 60%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 0.70rem;
+    padding-bottom: 0.70rem;
+    padding-left: 0.50rem;
+    padding-right: 0.50rem;
+    box-shadow: 0.10rem 0.20rem 0.20rem var(--Address_list_boxShadow);
+    border-radius: 5px;
+}
+
+.Address_list_div{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--Address_div_borderColor);
+    box-shadow: 0.10rem 0.20rem 0.2rem var(--Particular_div_boxshadow);
+    padding-bottom: 0.50rem;
+}
+
+.List_title{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.90rem;
+    padding-top: 0.50rem;
+    padding-bottom: 0.50rem;
+    background-color: var(--Address_index_div_bgColor);
+    padding-left: 0.30rem;
+    padding-right: 0.30rem;
+}
+
+.List_data{
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.95rem;
+    padding-left: 0.50rem;
+    margin-top: 0.30rem;
+}
+
+.List_subdata{
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.85rem;
+    padding-left: 0.50rem;
+    margin-bottom: 0.10rem;
+    color: var(--OtherData_textColor);
+}
+
+.List_subdata_title_info{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding-left: 0.50rem;
+    font-family: 'Mukta', sans-serif;
+}
+
+.List_subdata_title{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.75rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.List_subdata_info{
+    font-size: 0.80rem;
+    margin-top: 0.20rem;
+    margin-bottom: auto;
+    margin-left: 0.20rem;
+}
+
+.Add_address_option{
+    width: 96%;
+    background-color: var(--Add_address_option);
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.95rem;
+    color: white;
+    padding-top: 0.30rem;
+    padding-bottom: 0.30rem;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.80rem;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:600px){
+    #Address_list{
+        width: 95%;
+        padding-left: 0.20rem;
+        padding-right: 0.20rem;
+    }
+
+    .List_title{
+        padding-left: 0.20rem;
+        font-size: 0.90rem;
+    }
+
+    .List_data{
+        padding-left: 0.20rem;
+    }
+
+    .List_subdata{
+        padding-left: 0.20rem;
+    }
+
+    .List_subdata_title_info{
+        padding-left: 0.20rem;
+    }
+}

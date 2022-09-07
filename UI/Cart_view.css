@@ -1,0 +1,417 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    font-size: 3vh;
+    --Cart_view_body_bgColor: #eaeded; 
+    --Cart_view_bgColor: white; 
+    --Cart_view_boxShadow: rgb(209, 209, 209);
+    --Price_title_fontColor: rgb(28, 28, 28) ;  
+    --borderColor: rgb(214,214,214); 
+    --Quantity_div_borderColor: rgb(24, 24, 24); 
+    --ProductData_fontColor: rgb(64,64,64) ; 
+    --Font_familiy: 'Mukta', sans-serif;
+    --ProductCart_bgColor: white ; 
+    --Delete_text_color: rgb(255, 86, 86); 
+    --Delete_text_hoverColor: red; 
+    --Plus_minius_textColor: rgb(113, 113, 113) ; 
+    --Plus_minius_text_hoverColor: rgb(3, 3, 3); 
+    --Quantity_update_borderColor: rgb(227, 227, 227); 
+    --Cart_total_price_div_bgColor: #ffc15e;
+    --ProductInformation_div_border_color: rgb(178, 178, 178); 
+}
+
+body{
+    background-color: var(--Cart_view_body_bgColor);
+}
+
+/* Cart view main div  */
+
+#Cart_view{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+
+/* Cartview ProductList div  */
+
+#Cart_view_product{
+    width: 70%;
+    background-color: var(--Cart_view_bgColor);
+    box-shadow: 0.10rem 0.20rem 0.20rem var(--Cart_view_boxShadow);
+    z-index: 10;
+    height: fit-content;
+}
+
+/* Shooping cart and Price title div  */
+#Cart_view_title{
+    display: inline-block;
+    width: 100%;
+    padding-top: 0.50rem;
+    padding-bottom: 0.50rem;
+    border-bottom: 1px solid var(--borderColor);
+    background-color: var(--Cart_total_price_div_bgColor);
+}
+
+/* Shooping cart title div  */
+#Shopping_cart{
+    float: left;
+    font-size: 1.2rem;
+    font-family: var(--Font_familiy);
+    margin-left: 1rem;
+    margin-top: 0.30rem ; 
+}
+
+/* Price title div  */
+#Price{
+    float: right;
+    margin-right: 1rem;
+    margin-top: 0.40rem;
+    font-size: 0.90rem;
+    font-family: var(--Font_familiy);
+    color: var(--Price_title_fontColor);
+}
+
+/* Cart item div  */
+.Cart_item{
+    margin-top: 0.70rem;
+    overflow-x: hidden;
+}
+
+/* Cart item list divsion have 
+ProductImage, ProductInfo  */
+.Cart_item_list{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding-bottom: 1.2rem;
+    padding-top: 0.70rem;
+    cursor: pointer;
+}
+
+/* ProductImage div  */
+.Product_image_div{
+    width: 25%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ProductImage  */
+.Product_image{
+    width: 55%;
+    height: 8rem;
+}
+
+/* Product information and price info div  */
+.Product_information_price{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    width: 100%;
+}
+
+/* Product information  */
+.Product_information{
+    width: 80%;
+    text-align: left;
+}
+
+/* Product title  */
+.Product_title{
+    font-size: 1.2rem;
+    font-family: var(--Font_familiy);
+}
+
+/* Product other data div  */
+.Product_data{
+    font-size: 0.85rem;
+    font-family: var(--Font_familiy);
+    color:var(--ProductData_fontColor);
+    margin-top: 0.20rem;
+    margin-bottom: 0.20rem;
+}
+
+/* Product price div  */
+.Product_price_info{
+    width: 20%;
+    text-align: right;
+    padding-right: 1rem;
+    font-family: var(--Font_familiy);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Product quantity update and delete option div  */
+.Product_quantity_delete_option{
+    width: 100%;
+    max-width: 98.2%;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding-top: 0.60rem;
+    padding-bottom: 0.60rem;
+    padding-left: 0.90rem;
+    cursor: pointer;
+    background-color: #f6f6f6;
+    z-index: 0;
+}
+
+/* Quantity update div  */
+.Product_quantity{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    width: 20%;
+    border-right: 1px solid var(--Quantity_div_borderColor);
+}
+
+.Quantity_title{
+    font-size: 1rem;
+    font-family: var(--Font_familiy);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Quantity_update{
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    width: 60%;
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1rem;
+    border: 1px solid var(--Quantity_update_borderColor);
+    padding-top: 0.10rem;
+    padding-bottom: 0.10rem;
+    background-color: var(--ProductCart_bgColor);
+    
+}
+
+.Plus_minius_Button{
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 30%;
+    cursor: pointer;
+    color: var(--Plus_minius_textColor);
+}
+
+.Plus_minius_Button:hover{
+    color: var(--Plus_minius_text_hoverColor);
+}
+
+
+#AmountCount{
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40%;
+    color:var(--Plus_minius_textColor);
+}
+
+#AmountCount:hover{
+    color: var(--Plus_minius_text_hoverColor);
+}
+
+/* Product delete option div  */
+.Product_delete{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.1rem;
+    margin-left: 0.80rem;
+    font-family: var(--Font_familiy);
+    color: var(--Delete_text_color);
+    padding-left: 0.60rem;
+    padding-right: 0.60rem;
+    padding-top: 0.20rem;
+    padding-bottom: 0.20rem;
+}
+
+.Product_delete:hover{
+    color: var(--Delete_text_hoverColor);
+}
+
+/* Cart total price info div  */
+#Cart_price_total_information{
+    margin-top: 0.50rem;
+    border-top: 1px solid var(--borderColor);
+    text-align: right;
+    padding-top: 0.60rem;
+    padding-bottom: 0.60rem;
+    padding-right: 1rem;
+    font-size: 1.1rem;
+    font-family: var(--Font_familiy);
+    cursor: pointer;
+    background-color: var(--Cart_total_price_div_bgColor);
+}
+
+/* Proceed to buy option div  */
+#Procced_buy_div{
+    width: 28%;
+    height: fit-content;
+    margin-left: 2%;
+}
+
+#ProductList{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0.10rem 0.20rem 0.20rem var(--Cart_view_boxShadow);
+}
+
+.Productdiv_extracss{
+    width: 7.8rem;
+    margin-left: 0.40rem;
+    margin-right: 0.40rem;
+    height: fit-content;
+    background-color: var(--Productdiv_bgColor);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+#Cart{
+    box-shadow: 0.10rem 0.20rem 0.20rem var(--Cart_view_boxShadow);
+    background-color: var(--Cart_view_bgColor);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+/* Delivery related other infomation div  */
+#Delivery_information{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Delivery_information_data{
+    text-align: left;
+    font-size: 0.85rem;
+    font-family: var(--Font_familiy);
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 0.40rem;
+}
+
+/* Subtoal and price info div  */
+#Subtotal_totalprice{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 0.90rem;
+    margin-bottom: 0.60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Subtotal_data{
+    font-size: 1.1rem;
+    font-family: var(--Font_familiy);
+}
+
+#totalprice_data{
+    font-size: 1.1rem;
+    font-family: var(--Font_familiy);
+    font-weight: 600;
+    margin-left: 0.30rem;
+}
+
+/* Proceed to buy option div  */
+#Proceed_to_buy_option{
+    width: 80%;
+    background-color: var(--Cart_total_price_div_bgColor);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.90rem;
+    font-family: var(--Font_familiy);
+    padding-top: 0.20rem;
+    padding-bottom: 0.20rem;
+    cursor: pointer;
+}
+
+#Proceed_to_buy_option:hover{
+    background-color:  #393d46;
+    color: white;
+}
+
+@media only screen and (max-width:500px){
+    #Cart_view{
+        display: block;
+    }
+
+    #Cart_view_product{
+        width: 100%;
+    }
+
+    .Cart_item_list{
+        display: block;
+    }
+    
+    .Product_image_div{
+        width: 100%;
+    }
+
+    .Product_image{
+        width: 50%;
+        height: 9rem;
+    }
+    
+    .Product_information_price{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.80rem;
+        border-top: 1px solid var(--ProductInformation_div_border_color);
+        padding-top: 0.50rem;
+    }
+
+    .Product_data{
+        font-size: 0.85rem;
+    }
+
+    .Product_title{
+        font-size: 1.1rem;
+    }
+
+    .Product_price_info{
+        width: 13%;
+        font-size: 1.1rem;
+    }
+    
+    .Product_quantity{
+        width: 60%;
+    }
+
+    #Procced_buy_div{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 0.80rem;
+    }
+
+    .Productdiv_extracss{
+        width: 7.4rem;
+        margin-left: 0.20rem;
+        margin-right: 0.20rem;
+    }
+}

@@ -1,0 +1,135 @@
+:root{
+    --Rating_iconColor: rgb(207, 207, 207) ; 
+    --Rating_check_iconColor: orange; 
+    --Productdiv_bgColor: #f6f7fb; 
+    --Productdiv_boxShadow: rgb(207, 207, 207) ; 
+    --ProductImage_boxShadow: rgb(123, 123, 123); 
+    --Productdiv_savingText_color: #818181; 
+    --Productdiv_discountText_color: rgb(88,88,88); 
+    --Productdiv_retailText_color: rgb(235,35,35);
+    --Product_otheroptiondiv_color: #fec870; 
+}
+
+/* ProductDivision  */
+.Product_data{
+    height: fit-content;
+    width: 9.5rem;
+    background-color: var(--Productdiv_bgColor);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+/* ProductData hoiver effect  */
+.Product_data:hover{
+    box-shadow: 0.10rem 0.20rem 0.20rem var(--Productdiv_boxShadow);
+
+}
+
+/* Product image div  */
+.Product_image_division{
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Productimage  */
+.Product_image{
+    height: 90%;
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: 0.10rem 0.20rem 0.20rem var(--ProductImage_boxShadow);
+}
+
+/* Product information div */
+.Product_information{
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    padding-left: 0.30rem;
+    padding-bottom: 0.40rem;
+}
+
+/* Product saving amount information div  */
+.Product_saving{
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.90rem;
+    color: var(--Productdiv_savingText_color);
+    padding-bottom: 0.50rem;
+}
+
+/* Product price info div  */
+.Product_price{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 0.40rem;
+}
+
+/* Product retail price  */
+.Product_retail_price{
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.90rem;
+    color: var(--Productdiv_discountText_color);
+    width: 50%;
+    text-align: left;
+    padding-left: 0.40rem;
+}
+
+/* Product discount price div  */
+.Product_discount_price{
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.90rem;
+    color: var(--Productdiv_retailText_color);
+    width: 50%;
+    text-align: right;
+    padding-right: 0.80rem;
+}
+
+/* Product Rating option  */
+.ProductData_rating{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0.60rem;
+    margin-bottom: 0.60rem;
+}
+
+/* Product other option div  */
+.Product_other_option{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--Product_otheroptiondiv_color);
+    padding-top: 0.50rem;
+    padding-bottom: 0.50rem;
+    width: 100%;
+}
+
+/* Product option  */
+.Product_option{
+    font-size: 0.50rem;
+    margin-left: 0.50rem ;
+    margin-right: 0.50rem;
+    cursor: pointer;
+}
+
+.fa-star{
+    color: var(--Rating_iconColor);
+}
+
+.checked {
+    color: var(--Rating_check_iconColor);
+}
+
+@media only screen and (max-width:500px){
+    .Product_data{
+        width: 7.7rem;
+        margin-left: 0.40rem;
+        margin-right: 0.40rem;
+    }
+}

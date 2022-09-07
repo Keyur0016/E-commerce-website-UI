@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Productdiv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Rubik&display=swap" rel="stylesheet">
+    <title>Kitablovers</title>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="Navbar navbar">
+
+        <div id="Navmenu">
+            
+            <!-- Navebar menu option  -->
+            <div id="Navbar_menu" onclick="openNav()">
+                <img src="./Image/Menu.ico" alt="" id="Navbar_menu_image"
+                onclick="openNav()">
+            </div>
+        
+            <!-- Navbar logo  -->
+            <div id="Navbar_logo">
+                <img src="./Image/logo.png" alt="" id="Navbar_logo_image" >
+            </div>
+            
+            <!-- Searchoption and Otheroption division  -->
+
+            <div id="Searchdiv_optiondiv">
+
+                <div id="Navbar_option">
+                     
+                    <!-- Save product option  -->
+                    <div class="Navbar_option_div">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+        
+                    <!-- Cart option  -->
+                    <div class="Navbar_option_div">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+        
+                    <!-- Account option  -->
+                    <div class="Navbar_option_div">
+                        <i class="fa-solid fa-user fa-2x"></i>
+                    </div>
+                     
+                </div>
+
+                <!-- Navbar option division   -->
+                
+                <div id="Navmenu_search">
+                    
+                    <!-- Search input  -->
+                    <input type="text" name="Searchinput" id="Navmenu_searchinput"
+                    placeholder="Books/ Authors/ ISRN">
+
+                    <!-- Search button  -->
+                    <div class="Navbar_option_div Responsive_searchoption"onclick="OpenSearchInput()" >
+                        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+        </div>
+
+    </nav>
+
+    <!-- Website all content division  -->
+
+    <div id="Website_content">
+        
+        <!-- Select option division  -->
+        <div id="Selection_option_division">
+
+            <!-- New arrivals option  -->
+            <div class="Selection_option">
+                New arrivals
+            </div>
+
+            <!-- Best seller option  -->
+            <div class="Selection_option">
+                Best seller
+            </div>
+
+            <!-- Book sets option  -->
+            <div class="Selection_option">
+                Book sets
+            </div>
+
+            <!-- Category option  -->
+            <div class="Select_dropdown_option">
+                <div class="Selection_option">Catgories &#129123;</div>
+                <div class="dropdown-content">
+                  <a href="#">Abandoned childern</a>
+                  <a href="#">Abbeys</a>
+                  <a href="#">Abduction</a>
+                  <a href="#">Abiility</a>
+                  <a href="#">Absentes mothers</a>
+                </div>
+            </div>
+
+            <!-- Merchandies option  -->
+            <div class="Select_dropdown_option">
+                <div class="Selection_option">Merchandies &#129123;</div>
+                <div class="dropdown-content">
+                  <a href="#">Notebook-Wiro</a>
+                  <a href="#">New arrivals</a>
+                </div>
+            </div>
+
+            <!-- Rare collection option  -->
+            <div class="Selection_option">
+                Rare collection
+            </div>
+
+            <!-- Load the box option  -->
+            <div class="Select_dropdown_option">
+                <div class="Selection_option">Load the box &#129123; </div>
+                <div class="dropdown-content">
+                  <a href="#">Events</a>
+                  <a href="#">Readymade Books</a>
+                  <a href="#">Surpirse Box</a>
+                </div>
+            </div>
+
+            <!-- Wholesale option  -->
+            <div class="Selection_option">
+                Wholesale
+            </div>
+
+        </div>
+        
+        <!-- Select category option for Mobileview for Responsive design   -->
+        <div id="Category_selection_option">
+
+            <div class="Select_dropdown_option">
+                <div class="Selection_option">Select by Catgories</div>
+                <div class="dropdown-content">
+                  <a href="#">Abandoned childern</a>
+                  <a href="#">Abbeys</a>
+                  <a href="#">Abduction</a>
+                  <a href="#">Abiility</a>
+                  <a href="#">Absentes mothers</a>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true"
+        style="width: 99vw;
+        justify-content: center;
+        text-align: center;">
+            
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner Banner_division">
+              <div class="carousel-item active">
+                <img src="./Image/Banner1.jpg" class="d-block w-100  Banner_image" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Image/Banner2.jpg" class="d-block w-100 Banner_image" alt="..dfdfdfdf.">
+              </div>
+              <div class="carousel-item">
+                <img src="./Image/Banner1.jpg" class="d-block w-100 Banner_image" alt="...">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <!-- Today top selling items  -->
+        <div class="Item_title">
+            Trading now: Today top seller
+        </div>
+         
+        <!-- *** Top selling item product list *** -->
+        <div class="Product_data_division">
+            
+            <!-- Product1  -->
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage3.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage5.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage6.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+         
+        <!-- Special discount image carousel  -->
+
+        <div class="Item_title" style="background-color: white;
+        margin-bottom: 0px;
+        font-size: 1.2rem;">
+            Special and Discount
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
+        style="width: 99vw;
+        text-align: center;
+        justify-content: center;">
+            
+            <div class="carousel-inner Discount_banner_division">
+              <div class="carousel-item active">
+                <img src="./Image/Discount1.jpg" class="d-block w-100 Discount_banner" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Image/Discount2.jpg" class="d-block w-100 Discount_banner" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Image/Discount3.jpg" class="d-block w-100 Discount_banner" alt="...">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+        
+        <!-- Sell information  -->
+        <div class="Item_title">
+            Sell information 
+        </div>
+
+        <!-- Sell information division  -->
+        <div id="Sell_information_division">
+           
+            <!-- Sell banner image  -->
+            <div id="Sell_image_division">
+                <img src="./Image/Sell_banner.jpg" alt="" id="Sell_image">
+            </div>
+            
+            <!-- Sell information  -->
+            <div id="Sell_information">
+                LOAD THE BOX - Pay for the box and load it with books ! If you are in Indore, Here is an exciting news for all the book worms who look forward to the book exhibitions. The USP of the exhibition is - One Time Payment for all the books you can fit into the box. There are three different box sizes – The Money saver @ 1100 ( fits in 10-13 books) The Wealth box @ 1650 ( fits in 17-20 books) The Treasure box @ 2750 ( fits in 30-33 books). These are just estimates , use your wit to fit in as 
+                many books as you can provided the box should close flat. Expect books like - Collected works of shakespeare , autobiography of Adolf Hitler, Harry potter and works of Authors such as: Jk Rowling , Agatha Christie, Ruskin Bond, Jeffrey Archer, Ken Follett, Obama, Orhan Pamuk, Khalid Husseini, S.Covey, etc. to name a few. The entry is free. Don't miss this chance to get your hand of some of the best books available. Golden chance for all the book lovers to grab this amazing deal. Please note – Cards are accepted too , and you can Sell your old books too and get some amazing discounts. 8th SEP - 11th SEP 2022 Mark the dates! Timings: 10:00 am - 9:00 pm Venue : Surbhi Garden Agra Bombay Rd, Near Pakiza & C21 Mall, LIG Colony, Indore, Madhya Pradesh 452010 Google Maps:
+            </div>
+
+        </div>
+        
+        <!-- New arrivals selling items  -->
+        <div class="Item_title">
+            New arrivals 
+        </div>
+
+        <div class="Product_data_division">
+            
+            <!-- Product1  -->
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage3.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage5.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage6.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Best selling books  -->
+        <div class="Item_title">
+            Best selling books 
+        </div>
+
+        <div class="Product_data_division">
+            
+            <!-- Product1  -->
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage3.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage5.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage6.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+         
+
+        <div class="Item_title" style="background-color: white;
+        margin-bottom: 0px;
+        font-size: 1.2rem;">
+            Childern and Young adults
+        </div>
+
+        <div class="Image_selection_division">
+            <img src="./Image/Childern_young_adults.jpg" alt="" class="Image_selection">
+        </div>
+
+        <!-- Rare collection books  -->
+        <div class="Item_title">
+            Rare collection
+        </div>
+
+        <div class="Product_data_division">
+            
+            <!-- Product1  -->
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage3.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage5.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Product_data">
+
+                <!-- Product image  -->
+                <div class="Product_image_division">
+                    <img src="./Image/BookImage6.jpg" alt="" class="Product_image">
+                </div>
+
+                <div class="ProductData_rating">
+                    <span class="fa fa-star checked RatingIIcon"></span>
+                    <span class="fa fa-star checked  RatingIIcon""></span>
+                    <span class="fa fa-star checked RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                    <span class="fa fa-star RatingIIcon""></span>
+                </div>
+                
+                <!-- Product information  -->
+                <div class="Product_information">Book information</div>
+                
+                
+                <!-- Product price information  -->
+                <div class="Product_price">
+
+                    <!-- Product discount price  -->
+                    <div class="Product_retail_price">
+                        <strike>₹400</strike>
+                    </div>
+
+                    <!-- Product retail price  -->
+                    <div class="Product_discount_price">
+                        ₹500
+                    </div>
+
+
+                </div> 
+
+                <!-- Product saving amount information  -->
+                <div class="Product_saving">You save ₹100</div>
+
+                
+
+                <!-- Product other functionality division  -->
+                <div class="Product_other_option">
+
+                    <!-- save option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-heart fa-2x"></i>
+                    </div>
+                    
+                    <!-- product view option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-eye fa-2x"></i>
+                    </div>
+                    
+                    <!-- Add to cart option  -->
+                    <div class="Product_option">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Product policy division  -->
+        <div id="Product_policy_division">
+            
+            <!-- Free delivey related information  -->
+            <div class="Product_policy">
+
+                <div class="Product_policy_icon">
+                    <i class="fa-solid fa-rocket fa-2x"></i>
+                </div>
+
+                <div class="Product_policy_information">
+                    Free delivery
+                </div>
+
+            </div>
+
+            <!-- Return policy related information  -->
+            <div class="Product_policy">
+
+                <div class="Product_policy_icon">
+                    <i class="fa-solid fa-rotate fa-2x"></i>
+                </div>
+
+                <div class="Product_policy_information">
+                    5 Day return
+                </div>
+
+            </div>
+
+            <!-- Secure payment related information  -->
+            <div class="Product_policy">
+
+                <div class="Product_policy_icon">
+                    <i class="fa-solid fa-credit-card fa-2x"></i>
+                </div>
+
+                <div class="Product_policy_information">
+                    Secure payment
+                </div>
+
+            </div>
+            
+            <!-- Support information related information  -->
+            <div class="Product_policy">
+
+                <div class="Product_policy_icon">
+                    <i class="fa-brands fa-rocketchat fa-2x"></i>
+                </div>
+
+                <div class="Product_policy_information">
+                    10AM to 6 PM (Mon-Sat)<br> Support
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-dark text-muted" id="Footer_division">
+
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+              
+              <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+              </div>
+
+            <!-- Social media option division  -->
+            <div>
+
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-google"></i>
+                </a>
+
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-github"></i>
+                </a>
+
+            </div>
+
+            </section>
+
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+
+                <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Kitlablovers
+                        </h6>
+
+                        <p>
+                            Best bookdealers
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 Footer_title_color">
+                          Quick link
+                        </h6>
+
+                        <p>
+                          <a href="#!" class="text-reset footer_link">Policy</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset footer_link">Return</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset footer_link">FAQs</a>
+                        </p>
+                        
+
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4 Footer_title_color">
+                          Comapany
+                        </h6>
+                        <p>
+                          <a href="#!" class="text-reset footer_link">About us</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset footer_link">Contact us</a>
+                        </p>
+                        
+
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 Footer_title_color">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Kh no 20/29,
+                            Nangli poona village,
+                            Near Cooperative Bank,
+                            Delhi - 110036</p>
+                        <p>
+                          <i class="fas fa-envelope me-3"></i>
+                          cs@Kitablovers.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +91 8860-525-525</p>
+
+                    </div>
+
+                </div>
+
+              </div>
+
+            </section>
+            <!-- Section: Links  -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2021 Copyright:
+              <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Yourwebsite.com</a>
+            </div>
+
+            <!-- Copyright -->
+        </footer>
+         
+        <!-- Slidiing menu division  -->
+        <div id="mySidenav" class="sidenav">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">New arrivals</a>
+            <a href="#">Best seller</a>
+            <a href="#">Book sets</a>
+            <a href="#">Merchandies</a>
+            <a href="#">Rare collection</a>
+            <a href="#">Load the box</a>
+            <a href="#">Wholesale</a>
+        </div>
+
+    </div>
+
+    <!-- This is for Mobileview of Navbar menu option -->
+    
+    <div id="Home_option">
+        <div class="Navbar_option_div">
+            <i class="fa-solid fa-heart fa-2x"></i>
+        </div>
+
+        <!-- Cart option  -->
+        <div class="Navbar_option_div">
+            <i class="fa-solid fa-cart-shopping fa-2x"></i>
+        </div>
+
+        <!-- Account option  -->
+        <div class="Navbar_option_div">
+            <i class="fa-solid fa-user fa-2x"></i>
+        </div>
+        
+    </div>
+
+    
+    
+    
+    <!-- Replace your Kitcode of Fontawesome  -->
+    <script src="https://kit.fontawesome.com/2b5bac5bde.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+     
+        
+    <script>
+        
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        function OpenSearchInput(){
+            if (document.getElementById("Navmenu_searchinput").style.display == "block"){
+                document.getElementById("Navmenu_searchinput").style.display = "none"; 
+            } 
+            else{
+                document.getElementById("Navmenu_searchinput").style.display = "block" ; 
+            }
+        }
+    </script>
+</body>
+</html>

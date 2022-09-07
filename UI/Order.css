@@ -1,0 +1,348 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    font-size: 3vh;
+    --Order_view_body_bgColor: #eaeded; 
+    --Order_view_boxShadow: rgb(209, 209, 209);
+    --DetailsBox_showdow: rgb(239, 239, 239); 
+    --OrderIndex_div_bgColor: rgb(255,193,94) ; 
+    --OrderDetails_textColor: rgb(95,95,95); 
+    --ProductTitle_color: rgb(48, 48, 48);
+    --AutherName_textColor: rgb(96, 96, 96);
+    ---OrderIndex_hover_bgColor: #393d46; 
+    --OrderIndex_hover_textColor: white; 
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--Order_view_body_bgColor);
+}
+
+#Order_page{
+    height: auto;
+    width: 100vw;
+    background-color: var(--Order_view_body_bgColor);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#Order_list{
+    background-color: white;
+    width: 70vw;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0.10rem 0.20rem 0.20rem var(--Order_view_boxShadow);
+    padding-bottom: 1rem;
+}
+
+.Order_information_div{
+    width: 100%;
+    height: 14rem;
+    overflow-y: hidden;
+    margin-bottom: 1rem;
+}
+
+.Order_index{
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    background-color: var(--OrderIndex_div_bgColor) ;
+    text-align: left;
+    padding-left: 0.60rem;
+    padding-top: 0.30rem;
+    padding-bottom: 0.30rem;
+    cursor: pointer;
+}
+
+.Order_index:hover{
+    background-color: var(---OrderIndex_hover_bgColor) ;
+    color: var(--OrderIndex_hover_textColor);
+}
+
+.Download_bill_option{
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 0.30rem;
+    margin-bottom: 0.30rem;
+    background-color: rgb(241, 241, 241);
+    padding-top: 0.20rem;
+    padding-bottom: 0.20rem;
+    padding-left: 0.60rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Download_bill_option:hover{
+    background-color: var(---OrderIndex_hover_bgColor);
+    color: var(--OrderIndex_hover_textColor);
+}
+
+.Order_title{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.95rem;
+    margin-top: 0.80rem;
+    margin-bottom: 0.80rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    cursor: pointer;
+}
+
+.Order_details{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(228, 228, 228);
+    box-shadow: 0.10rem 0.20rem 0.20rem var(--DetailsBox_showdow);
+    border-radius: 5px;
+    margin-top: 0.60rem;
+    padding-top: 0.40rem;
+    padding-bottom: 0.40rem;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+}
+
+.Order_details_title_data{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
+}
+
+.Order_details_title{
+    font-size: 0.85rem;
+    font-family: 'Mukta', sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.30rem;
+    color: var(--OrderDetails_textColor);
+    width: 50%;
+    text-align: left;
+}
+
+.Order_data{
+    font-size: 0.85rem;
+    font-family: 'Mukta', sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.30rem;
+    color: var(--OrderDetails_textColor);
+}
+
+.Delivery_Status{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.75rem;
+    text-align: left;
+    padding-left: 0.60rem;
+    margin-top: 0.40rem;
+    margin-bottom: 0.40rem;
+}
+
+.Order_delivery_date{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding-left: 0.60rem;
+}
+
+.Delivery_date_title{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.75rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+    text-align: left;
+}
+
+.Delivery_date_data{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 0.85rem;
+    font-family: 'Mukta', sans-serif;
+    color: rgb(0, 176, 117);
+}
+
+.Order_item{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-top: 0.30rem;
+    margin-bottom: 0.30rem;
+}
+
+.Order_image_div{
+    height: 7rem;
+    width: 20%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.Order_image{
+    height: 5.5rem;
+    width: 50%;
+    margin: auto;
+}
+
+.Order_information_price{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    margin-top: 0.50rem;
+    width: 78%;
+}
+
+.Order_information{
+    width: 80%;
+}
+
+.Order_price{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.95rem;
+    width: 20%;
+    text-align: right;
+}
+
+.Book_title{
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.90rem;
+    color: var(--ProductTitle_color);
+    text-align: left;
+}
+
+.Auther_information{
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.85rem;
+    text-align: left;
+    color: var(--AutherName_textColor);
+    margin-top: 0.20rem;
+    margin-bottom: 0.20rem;
+}
+
+.Quantity_information{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    margin-top: 0.20rem;
+    margin-bottom: 0.30rem;
+}
+
+.Quantity_title{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Quantity{
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.85rem;
+    margin-top: 0.20rem;
+    margin-bottom: auto;
+    margin-left: 0.15rem;
+}
+
+.Payment_title{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+    text-align: left;
+    padding-left: 0.60rem;
+    padding-top: 0.40rem;
+}
+
+.Payment_data{
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.88rem;
+    text-align: left;
+    padding-left: 0.60rem;
+    padding-top: 0.40rem;
+    padding-bottom: 0.30rem;
+    border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.Order_summery{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding-left: 0.35rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.Order_summery_title{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.95rem;
+    width: 50%;
+    text-align: left;
+}
+
+.Order_summery_total{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.95rem;
+    color: rgb(186, 3, 3);
+}
+
+@media only screen and (max-width:500px){
+    :root{
+        font-size: 2.7vh;
+    }
+
+    #Order_list{
+        width: 95vw;
+    }
+
+    .Order_information_div{
+        height: 14rem;
+    }
+
+    .Order_details{
+        width: 92%;
+    }
+    
+    .Order_item{
+        display: block;
+    }
+
+    .Order_image_div{
+        width: 100%;
+        height: 8.5rem;
+    }
+
+    .Order_image{
+        height: 8rem;
+        width: 40%;
+    }
+
+    .Order_information_price{
+        width: 100%;
+    }
+
+    .Book_title{
+        font-size: 0.95rem;
+    }
+
+    .Auther_information{
+        font-size: 0.95rem;
+    }
+
+    .Quantity_title{
+        font-size: 0.90rem;
+    }
+
+    .Quantity{
+        font-size: 0.90rem;
+    }
+}

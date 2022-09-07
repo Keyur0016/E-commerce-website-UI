@@ -1,0 +1,819 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: white;
+    min-height: 90vh;
+    margin: 0px;
+    max-width: 100vw;
+}
+
+:root{
+    --Navbar_color: #ffaf2d; 
+    --Navbar_icon_color:rgb(56,56,56); 
+    --Navbar_icon_hover_color: black; 
+
+    --Selection_option_div: #ffe1b0;
+    --Selection_option_div_textColor: rgb(56,56,56); 
+    --Selection_option_div_text_hoverColor:black;
+    --Selection_dropdown_menu_textColor: rgb(76,76,76); 
+    --Selection_dropdown_menu_hoverColor: rgb(238,238,238) ;
+    --Item_title_backgroundColor:#fec870; 
+    --Item_title_textColor: black ; 
+    --Product_data_main_divColor: #f6f7fb; 
+    --Product_data_boxShdow: rgb(228, 228, 228); 
+    --Product_svaingInfo_textColor: #818181; 
+    --Product_discountprice_textColor: rgb(88,88,88); 
+    --Product_retailprice_textColor: rgb(235,35,35); 
+    --Product_otheroptiondiv_color: #fec870; 
+    --Product_policy_boxshadow_color: #adadad; 
+    --Product_policy_backgroundColor: #f6f7fb; 
+    --Product_policy_hover_bgColor: #393d46; 
+    --Product_policy_iconColor: #ffaf2d;
+    --Footer_iconColor: #ffaf2d;  
+    --Mobileview_optionmenu_backgroundColor: white; 
+    --Mobileview_optionmenu_borderColor: rgb(152,152,152); 
+    --Input_widget_focus_color: #fec870; 
+      font-size: 3vh;
+}
+
+/* Navbar div  */
+
+.Navbar{
+    height: 10vh;
+    background-color: var(--Navbar_color);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Navbar menu  */
+
+#Navmenu{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* Option1 Navbar list option  */
+
+#Navbar_menu{
+    height: 100%;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+#Navbar_menu_image{
+    height: 1.40rem;
+    width: 1.40rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Option2 Navbar logo option  */
+
+#Navbar_logo{
+    height: 100%;
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 0.80rem;
+    padding-right: 0.80rem;
+}
+
+#Navbar_logo_image{
+    height: 2.10rem;
+    width: 2.10rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Navmenu Searchinput and Otheroption division  */
+
+#Searchdiv_optiondiv{
+    display: inline-block; 
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    width: 93%;
+    justify-content: center;
+}
+
+/* Navbar other option divsion  */
+
+#Navbar_option{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    float: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    margin-right: 0.90rem;
+}
+
+/* Nabar particular option division  */
+
+.Navbar_option_div{
+    font-size: 0.60rem;
+    margin-top: 0.40rem;
+    margin-bottom: auto;
+    padding-left: 0.60rem;
+    padding-right: 0.60rem;
+    cursor: pointer;
+    height: 100%;
+}
+
+/* *** Font awesome icon color ***  */
+
+.fa-heart{
+    color: var(--Navbar_icon_color);
+}
+
+.fa-heart:hover{
+    color: var(--Navbar_icon_hover_color);
+}
+
+.fa-eye{
+    color: var(--Navbar_icon_color);
+}
+.fa-eye:hover{
+    color: var(--Navbar_icon_hover_color);
+}
+
+.fa-cart-shopping{
+    color: var(--Navbar_icon_color);
+}
+
+.fa-cart-shopping:hover{
+    color: var(--Navbar_icon_hover_color);
+}
+
+.fa-user{
+    color: var(--Navbar_icon_color);
+}
+
+.fa-user:hover{
+    color: var(--Navbar_icon_hover_color);
+}
+
+.fa-magnifying-glass{
+    color: var(--Navbar_icon_color);
+}
+
+.fa-magnifying-glass:hover{
+    color: var(--Navbar_icon_hover_color);
+}
+
+/* Product policy related font awesome icon  */
+
+.fa-rocket{
+    color: var(--Product_policy_iconColor);
+}
+
+.fa-rotate{
+    color: var(--Product_policy_iconColor);
+}
+
+.fa-credit-card{
+    color: var(--Product_policy_iconColor);
+}
+
+.fa-rocketchat{
+    color: var(--Product_policy_iconColor);
+}
+
+/* Footer social handle Font awesome icon  */
+
+.fa-facebook-f{
+    color: var(--Footer_iconColor);
+}
+
+.fa-twitter{
+    color: var(--Footer_iconColor);
+}
+
+.fa-instagram{
+    color: var(--Footer_iconColor);
+}
+
+.fa-linkedin{
+    color: var(--Footer_iconColor);
+}
+
+.fa-github{
+    color: var(--Footer_iconColor);
+}
+
+.fa-google{
+    color: var(--Footer_iconColor);
+}
+
+.fa-envelope{
+    color: var(--Footer_iconColor);
+}
+
+.fa-phone{
+    color: var(--Footer_iconColor);
+}
+
+.fa-gem{
+    color: var(--Footer_iconColor);
+}
+
+/* Navbar search input division  */
+
+#Navmenu_search{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    margin-left: 1rem;
+    float: right;
+}
+
+/* Search input  */
+
+#Navmenu_searchinput{
+   border: 0px;
+   width: 15rem;
+   font-size: 0.88rem;
+   padding-top: 0.35rem;
+   padding-bottom: 0.35rem;
+   padding-left: 0.40rem;
+   color: rgb(52, 52, 52);
+   display: none;
+   animation: fadeIn 1s;
+}
+#Navmenu_searchinput:focus{
+    box-shadow :0 1px 1px var(--Input_widget_focus_color) inset, 0 0 8px var(--Input_widget_focus_color); 
+
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#Navmenu_searchinput:focus{
+    outline: none;
+}
+
+/* --- Main website content division ---  */
+
+#Website_content{
+    padding-top: 10vh;
+    width: fit-content;
+    height: fit-content;
+    overflow-y: auto;
+}
+
+/* Website catgory selection option division  */
+
+#Selection_option_division{
+    background-color: var(--Selection_option_div);
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    height: 8vh;
+    width: 100vw;
+}
+
+/* Category selection division for mobile view  */
+
+#Category_selection_option{
+    background-color: var(--Selection_option_div);
+    display: none;
+    text-align: center;
+    justify-content: left;
+    height: 8vh;
+    width: 100vw;
+}
+
+/* Particular selection option division  */
+
+.Selection_option{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.02rem;
+    color: var(--Selection_option_div_textColor);
+    text-align: center;
+    cursor: pointer;
+    padding-left: 0.70rem;
+    padding-right: 0.70rem;
+    display: block;
+}
+
+.Selection_option:hover{
+    color: var(--Selection_option_div_text_hoverColor);
+}
+
+/* Dropdown menu option division  */
+
+.Select_dropdown_option {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Dropdown menu content division  */
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(239, 239, 239, 0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.90rem;
+    color: var(--Selection_dropdown_menu_textColor);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+  
+.dropdown-content a:hover {background-color: var(--Selection_dropdown_menu_hoverColor);}
+  
+.Select_dropdown_option:hover .dropdown-content {display: block;}
+
+
+/* Carosole banner image division  */
+
+.Banner_division{
+    padding-top: 0.80rem;
+    padding-bottom: 0.50rem;
+    width: 98%;
+    padding-left: 0.60rem;
+    padding-right: 0.60rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Caresole Banner image  */
+
+.Banner_image{
+    width: 100%;
+    height: 24rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Discount_banner_division{
+    padding-top: 0.60rem;
+    padding-bottom: 0.60rem;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.Discount_banner{
+    width: 100%;
+    height: 15rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Product list title division */
+
+.Item_title{
+    background-color:  var(--Item_title_backgroundColor);
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.05rem;
+    color: var(--Item_title_textColor);
+    width: 100vw;
+    text-align: center;
+    justify-self: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 0.60rem;
+    padding-bottom: 0.60rem;
+}
+
+/* Product list main division  */
+
+.Product_data_division{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    
+}
+
+
+
+/* Product policy information div  */
+
+#Product_policy_division{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Particular product policy division  */
+
+.Product_policy{
+    background-color: var(--Product_policy_backgroundColor);
+    box-shadow: 0.10rem 0.20rem 0.20rem var(--Product_policy_boxshadow_color);
+    width: 23%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-top: 0.20rem;
+    padding-bottom: 0.20rem;
+    cursor: pointer;
+}
+
+.Product_policy:hover{
+    background-color: var(--Product_policy_hover_bgColor);
+    color: white;
+}
+/* Product policy icon  */
+
+.Product_policy_icon{
+    font-size: 0.80rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Product policy information div  */
+
+.Product_policy_information{
+    font-size: 0.90rem;
+    font-family: 'Mukta', sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.70rem;
+}
+
+
+/* Sell information division  */
+
+#Sell_information_division{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+/* Sell banner image  */
+
+#Sell_image_division{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: 2%;
+}
+
+#Sell_image{
+    height: 20rem;
+    width: 100%;
+}
+
+/* Sell information div  */
+
+#Sell_information{
+    width: 40%;
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.95rem;
+}
+
+/* --- Footer ---  */
+
+.footer_link{
+    text-decoration: none;
+}
+  
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.20rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* 
+Home option menu divison 
+For Mobile view   */
+
+#Home_option{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--Mobileview_optionmenu_backgroundColor);
+    border-top: 1px solid var(--Mobileview_optionmenu_borderColor);
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    display: none;
+}
+
+.Footer_title_color{
+    color: var(--Footer_iconColor);
+}
+
+
+.Image_selection_division{
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+/* Media query for responsive design */
+
+@media only screen and (max-width:500px){
+
+    :root{
+        font-size: 2.8vh;
+    }
+
+    body{
+        height: 90vh;
+        overflow-y: hidden;   
+    }
+     
+    /* Navbar menu division  */
+
+    .Navbar{
+        height: 19vh;
+    }
+
+    #Navbar_menu{
+        display: flex;
+    }
+    
+    #Navbar_logo{
+        width: 20%;
+    }
+
+    #Navmenu_search{
+        padding-top: 0.90rem;
+        width: 100%;
+        margin-top: 0.45;
+        float: none;
+        margin-left: 0;
+        display: flex;
+        text-align: center;
+        justify-content: left;
+    }
+
+    #Navmenu_searchinput{
+        width: 14.3rem;
+        margin-left: 0.40rem;
+        display: block;
+    }
+
+    #Navbar_option{
+        display: none;
+    }
+
+    .Navbar_option_div{
+        font-size: 0.70rem;
+        margin-left: 0.50rem;
+        margin-right: 0.50rem;
+    }
+
+    #Searchdiv_optiondiv{
+        width: 100%;
+    }
+
+    /* Font awesome icon  */
+
+    .fa-heart{
+        color:  var(--Navbar_icon_hover_color);
+    }
+
+    .fa-cart-shopping{
+        color:  var(--Navbar_icon_hover_color);
+    }
+
+    .fa-user{
+        color: var(--Navbar_icon_hover_color);
+    }
+
+    #Selection_option_division{
+        display: none;
+    }
+    
+    .Banner_division{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .Item_title{
+        text-align: center;
+        width: 100vw;
+        padding-top: 0.70rem;
+        padding-bottom: 0.70rem;
+    }
+
+    .Product_data_division{
+        width: 100vw;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .Product_data{
+        width: 7.7rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem; 
+        margin-left: 0.20rem;
+        margin-right: 0.20rem;
+    }
+
+    #Product_policy_division{
+        display: block;
+    }
+
+    .Product_policy{
+        width: 97%;
+        border-right: 0px;
+        margin-top: 1.4rem;
+        margin-bottom: 1.4rem;
+        padding-top: 0.80rem;
+        padding-bottom: 0.80rem;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0.05rem 0.10rem 0.10rem #adadad;
+        border: 5px;
+    }
+
+    .Product_information{
+        font-size: 0.90rem;
+        padding-bottom: 0.50rem;
+    }
+
+    .Product_price{
+        padding-bottom: 0.50rem;
+    }
+
+    .Product_policy_icon{
+        font-size: 0.80rem
+    }
+
+    .Product_policy_information{
+        font-size: 1.10rem;
+    }
+
+    #Category_selection_option{
+        display: flex;
+    }
+
+    /* Footer  */
+    
+    #Footer_division{
+        width: 98%;
+    }
+
+    /* Sell information division  */
+
+    #Sell_information_division{
+        display: block;
+        width: 97vw;
+        padding-top: 00.40rem;
+        padding-bottom: 0.40rem;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    }
+
+    #Sell_image_division{
+        width: 100%;
+    }
+
+    #Sell_information{
+        width: 100%;
+        margin-top: 0.80rem;
+        padding-left: 3vw;
+        text-align: left;
+        margin: 0%;
+    }
+
+    #Website_content{
+        height: 98.5vh;
+        padding-bottom: 3vh;
+        margin-top: 9vh;
+    } 
+
+    /* Home option division  */
+
+    #Home_option{
+        display: flex;
+    }
+
+    .Responsive_searchoption{
+        margin-left: 0rem;
+        margin-right: 0rem;
+        height: 100%;
+    }
+
+    .Image_selection{
+        width: 100vw;
+        height: 8rem;
+    }
+   
+  
+}
+
+@media only screen and (max-width:1000px ) and (min-width:680px){
+    #Navmenu_searchinput{
+        width: 10rem;
+    }
+
+    #Navbar_option{
+        margin-right: 0.15rem; 
+    }
+
+    #Navmenu_search{
+        margin-left: 0.10rem;
+    }
+
+    .Navbar_option_div{
+        padding-left: 0.40rem;
+        padding-right: 0.40rem;
+    }
+}

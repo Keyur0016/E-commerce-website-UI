@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    font-size: 3vh;
+    --Add_address_div_bgColor: #eaeded; 
+    --Add_address_div_boxShadow:rgb(209, 209, 209);
+    --Input_widget_focus_color: #fec870; 
+    --Add_address_button_bgColor: #fec870; 
+    --Add_address_button_hoverColor : #393d46; 
+}
+
+body{
+    background-color: var(--Add_address_div_bgColor);
+}
+
+/* Add address division  */
+#Add_address_option{
+    width: 50%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 0.60rem;
+    padding-right: 0.60rem;
+    box-shadow: 0.10rem 0.20rem 0.20rem var(--Add_address_div_boxShadow);
+    border-radius: 5px;
+}
+
+#Add_address_title{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Input_division{
+    margin-top: 0.80rem;
+    margin-bottom: 0.80rem;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Input_title{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.80rem;
+}
+
+.Input_option{
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.88rem;
+}
+
+.Input_option:focus{
+    box-shadow :0px 1px 1px var(--Input_widget_focus_color) inset, 0 0 8px var(--Input_widget_focus_color); 
+    border: 1px solid var(--Input_widget_focus_color);
+}
+
+.Submit_button{
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.88rem;
+    background-color: var(--Add_address_button_bgColor);
+    color: black;
+    border: 0px;
+    padding-top: 0.30rem;
+    padding-bottom: 0.30rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Submit_button:hover{
+    background-color: var(--Add_address_button_hoverColor);
+    color: white;
+}
+
+@media only screen and (max-width:600px){
+    #Add_address_option{
+        width: 95%;
+        padding-left: 0.30rem;
+        padding-right: 0.30rem;
+    }
+
+    .Input_division{
+        width: 99%;
+    }
+
+    .Input_option{
+        font-size: 0.80rem;
+    }
+    .Submit_button{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
